@@ -12,7 +12,7 @@
     crossorigin="anonymous">
     <!-- User CSS -->
     <link rel="stylesheet" href="./style/Style.css" />
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Document</title>
   </head>
   <body>
@@ -36,6 +36,7 @@
               </li>              
             </ul>
           </div>
+          <button type="button" class="btn btn-dark" onclick="myFunction()">Change Theme</button>
       </div>
     </nav>
     <!-- Main Body -->
@@ -56,41 +57,45 @@
         </div>
       </div>
 
-      <div class="row">
-        <h3 class="col-auto me-auto nav-bar-options" id="about">About Me</h3>
-        <div class="col text">
-        Thank you for asking to look over my portfolio. Within this portfolio, you will find projects I have done.
-        My infatuation with coding started when I was introduced to a program called Cabinet Vision. Once I started to learn how to use the program, 
-        I noticed that you could make UCS's (user constructed standards). By looking at what other people had made and trial and error, I learned how to make my own UCS's. 
-        After about six years of doing this, my boss asked me to look into being able to code websites and another programming. From that, I found a course at UWA Coding Boot Camp. 
-        This portfolio was created as one of the homework assignments. So far all i have to add is the Catman shooting game i made, but I will update it as I go.
-        </div>  
-      </div>
+      <div class="container">  
 
-    </div>
-
-    <div class="container">    
-      <!-- portfolio container -->
-      <div class="container page-section">
-        <div class="row">      
-
-          <div class="col-sm-6 col-xs-12 nav-bar-options">
-            <div id="work">
-              <h2>Work</h2>
-            </div>                                  
+        <div class="row">
+          <div class="col">
+            <h3 id="about">About Me</h3>
           </div>
 
-          <div class="col-sm-6 col-xs-12">
-            <!-- add projects -->
-            <div class="row flex-container">    
+          <div class="row">
+            <div class="col-1">
+              <br>
+            </div>
+            <div class="col col-lg-11">
+              Thank you for asking to look over my portfolio. Within this portfolio, you will find projects I have done.
+              My infatuation with coding started when I was introduced to a program called Cabinet Vision. Once I started to learn how to use the program, 
+              I noticed that you could make UCS's (user constructed standards). By looking at what other people had made and trial and error, I learned how to make my own UCS's.<br> 
+              After about six years of doing this, my boss asked me to look into being able to code websites and another programming. From that, I found a course at UWA Coding Boot Camp. 
+              This portfolio was created as one of the homework assignments. So far all i have to add is the Catman shooting game i made, but I will update it as I go.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h3 id="work">Work</h3>
+          </div>
+
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <br>
+            </div>
+            <div class="col col-lg-5">
               <a href="https://scratch.mit.edu/projects/542691120/fullscreen/" class="flex-item cat-game">
                 <div>
                   <h3>Catman The Shooting Game</h3>
                   <span>Scratch</span>
                 </div>
               </a>
-            </div>            
-            <div class="row"> 
+            </div>
+            <div class="col col-lg-5">
               <a href="https://sandoman19.github.io/Marvel_Character_Wiki/" class="flex-item marvel-wiki">
                 <div>
                   <h3>Marvel</h3>
@@ -98,50 +103,69 @@
                 </div>
               </a>
             </div>
-            <div class="row"> 
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <br>
+            </div>
+            <div class="col col-lg-5">
+              <a href="https://sandoman19.github.io/Password-generater/" class="flex-item Password-generater">
+                <div>
+                  <h3>Password-generater</h3>
+                  <span>GitHub</span>
+                </div>
+              </a> 
+            </div>
+            <div class="col col-lg-5">
               <a href="https://sandoman19.github.io/guessing_game/" class="flex-item guessing-game">
                 <div>
                   <h3>Guessing Game</h3>
                   <span>GitHub</span>
                 </div>
               </a>
-            </div>              
-            <div class="row"> 
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <br>
+            </div>
+            <div class="col col-lg-5">
               <a href="https://sandoman19.github.io/WorkDayScheduler/" class="flex-item Work-Day-Scheduler">
                 <div>
                   <h3>Work-Day-Scheduler</h3>
                   <span>GitHub</span>
                 </div>
               </a>
-            </div> 
-
-          </div> 
-
+            </div>
+            <div class="col col-lg-5">
+              <br>
+            </div>
+          </div>
         </div>
-      </div>
+      </div>  
     </div>
 
-    <div class="container">
-      <div class="container page-section contact">
-        <div class="row">  
-        <div class="col-auto me-auto">
-          <div id="contact">
-            <h2>Contat Me</h2>
+    <div class="container contact">
+      <div class="row">
+        <div class="col">
+          <h3 id="contact">Contact Me</h3>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <br>
+          </div>          
+          <div class="col col-lg-3">
+            Mob: 0407272762
           </div>
-          <address class="row">
-            <div class="col"> 
-              <a href="tel:+610407272762">0407272762</a>
-            </div>
-            <div class="col">
-              <a href="mailto:aaron@charactergroup.com.au">aaron@charactergroup.com.au</a>
-            </div>
-            <div class="col"> 
-              <a href="https://github.com/Sandoman19?tab=repositories">GitHub</a>
-            </div>
-          </address>                                  
-        </div>         
-        </div>    
-      </div>
+          <div class="col col-lg-4">
+            <a href="mailto:aaron@charactergroup.com.au">Email: Aaron@charactergroup.com.au</a>
+          </div>
+          <div class="col col-lg-3">
+            <a href="https://github.com/Sandoman19?tab=repositories">Github: Sandoman19</a> 
+          </div>
+        </div>
+      </div>      
     </div>
 
     <!-- bootstrap Script -->
@@ -155,6 +179,12 @@
     </script>
     <!-- User Script -->
 
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
   </body>
 
 </html>
