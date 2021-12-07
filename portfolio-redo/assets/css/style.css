@@ -1,0 +1,177 @@
+body {
+  background-color: #212529;
+}
+
+.background-title {
+  background-image: url("../images/background-titile.jpg");
+  background-position:center;
+  height:310px;
+}
+
+.container {
+  background-color: white;
+}
+
+#studentAvatar {
+  border: 10px solid, #212529;
+  border-radius: 50%;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.text {
+  padding: 10px;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.nav-bar-options{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#profolioTitle{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px solid var(--secondary);
+  /* background-color: rgb(132, 89, 182); var(--primary); */
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+/* feature first portfolio item */
+.flex-item:first-child {
+    min-height: 150px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+
+.marvel-wiki {
+  background-image: url("../images/marvel-wiki.jpg");
+  background-repeat: no-repeat;
+}
+
+.guessing-game {
+  background-image: url("../images/guessing-game.jpg");
+  background-repeat: no-repeat;
+}
+
+.Work-Day-Scheduler {
+  background-image: url("../images/Work-Day-Scheduler.jpg");
+  background-repeat: no-repeat;
+}
+
+.cat-game {
+  background-image: url("../images/Catman.PNG");
+  background-repeat: no-repeat;
+}
+
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: var(--secondary);
+}
+
+@media (min-width: 768px) {
+  .navbar-brand.abs
+  {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .flex-item,
+  .flex-item:first-child 
+  {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child 
+  {
+    min-height: 150px;
+  }
+}
